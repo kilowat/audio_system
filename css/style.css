@@ -826,6 +826,9 @@ body {
     text-transform: uppercase;
     width: 200px;
 }
+.ajax-load-more-btn:hover{
+	background-color: #f46e28\9;/* ONLY IE */
+}
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
