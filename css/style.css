@@ -173,7 +173,7 @@ body {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+.hvr-buzz:hover, .hvr-buzz:active {
   -webkit-animation-name: hvr-buzz;
   animation-name: hvr-buzz;
   -webkit-animation-duration: 0.15s;
@@ -182,6 +182,52 @@ body {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+/* Bounce To Bottom */
+.hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f46e28;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:active {
+  color: white;
+}
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 .rub{
 	display: inline-block; 
@@ -650,6 +696,7 @@ body {
 .content {
 	padding: 0 0 100px;
 }
+
 /*start component best product(index-page)*/
 .best-product-wrapper{
 	background-color:#fafafa;
@@ -760,6 +807,24 @@ body {
 }
 .best-product-ico:hover {
     background: rgba(0, 0, 0, 0) url("/images/liked-product-ico.png") no-repeat scroll 0 100%;
+}
+.ajax-btn-wrapper{
+	text-align:center;
+}
+.best-product-wrapper .ajax-load-more-btn {
+    margin-top: 17px;
+		margin-bottom:10px;
+}
+.ajax-load-more-btn {
+		background: rgba(0, 0, 0, 0) url("/images/arrow-down-ico.png") no-repeat scroll 95% center;
+    border: 1px solid #f46e28;
+    color: #f46e28;
+    cursor: pointer;
+    font-family: Roboto-Light;
+    font-size: 1.2em;
+    height: 42px;
+    text-transform: uppercase;
+    width: 200px;
 }
 /* Footer
 -----------------------------------------------------------------------------*/
