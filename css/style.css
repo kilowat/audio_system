@@ -188,7 +188,7 @@ body {
 }
 .cart-liked-wrapper::before {
 		top: 3px;
-    background-image: url("images/liked-ico.png");
+    background-image: url("/images/liked-ico.png");
     content: "";
     display: block;
     height: 25px;
@@ -214,7 +214,7 @@ body {
     width: 42%;
 }
 .cart-main-wrapper::before {
-		background-image: url("images/cart-ico.png");
+		background-image: url("/images/cart-ico.png");
     content: "";
     display: block;
     height: 28px;
@@ -255,7 +255,7 @@ body {
     right: 12px;
     top: 9px;
     width: 22px;
-		background: rgba(0, 0, 0, 0) url("images/search-ico.png") repeat scroll 0 0;
+		background: rgba(0, 0, 0, 0) url("/images/search-ico.png") repeat scroll 0 0;
 }
 /*end component search*/
 .top-section {
@@ -348,6 +348,29 @@ body {
     text-transform: uppercase;
 }
 /*end component top menu*/
+
+/*start component main slider*/
+.main-slider{
+	position: relative;
+}
+.swiper-container{
+	height: 449px;
+}
+.main-slider .slide-head {
+    color: #fff;
+    font-size: 2.8em;
+    margin-top: 33px;
+    position: absolute;
+}
+.main-slider .slide-head h2 {
+   font-weight:normal;
+	 font-family: Roboto-Light
+}
+.slide-head strong {
+    font-weight: bold;
+		font-family:Roboto-Regular;
+}
+/*end component main slider*/
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {

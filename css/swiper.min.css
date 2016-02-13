@@ -98,32 +98,38 @@
   touch-action: pan-x;
 }
 /* Arrows */
-
+.slider-tools{
+	position:relative;
+}
 .swiper-button-next {
-    background-image:url('/images/slider-arrow-left.png');
+		background-image: url("/images/slider-arrow-left.png");
+    background-repeat: no-repeat;
     cursor: pointer;
     display: block;
-    height: 58px;
+    height: 32px;
+    left: 0;
     position: absolute;
-    top: 82.4%;
-    width: 58px;
+    top: -241px;
+    width: 17px;
     z-index: 10;
 }
 .swiper-button-prev {
-    background-image:url('/images/slider-arrow-right.png');
+		background-image: url("/images/slider-arrow-right.png");
+    background-repeat: no-repeat;
     cursor: pointer;
     display: block;
-    height: 58px;
+    height: 32px;
     position: absolute;
-    top: 82.4%;
-    width: 58px;
+    right: 0;
+    top: -241px;
+    width: 17px;
     z-index: 10;
 }
 .swiper-button-next:hover{
-	 background-position: center bottom;
+	 background-position: 0 100%
 }
 .swiper-button-prev:hover{
-	 background-position: center bottom;
+	 background-position: 0 100%
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -159,7 +165,7 @@
 }
 /* Pagination Styles */
 .swiper-pagination {
-  bottom: 27px;
+  bottom: 25px;
   position: absolute;
   text-align: center;
   -webkit-transition: 300ms;
@@ -176,13 +182,15 @@
   opacity: 0;
 }
 .swiper-pagination-bullet {
-    background: #fff none repeat scroll 0 0;
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 100%;
     display: inline-block;
-    height: 17px;
-    opacity: 1;
-    width: 20px;
-    margin-right: 2px;
+    height: 13px;
     margin-left: 2px;
+    margin-right: 2px;
+    opacity: 1;
+    width: 13px;
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -198,17 +206,16 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 .swiper-pagination-white .swiper-pagination-bullet {
-  background: #fff;
+
 }
 .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #ad9964;
+	border:1px solid #f16d28;
 }
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: #fff;
+
 }
 .swiper-pagination-black .swiper-pagination-bullet-active {
-  background: #000;
+
 }
 .swiper-container-vertical > .swiper-pagination {
   right: 10px;
