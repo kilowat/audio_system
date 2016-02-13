@@ -166,74 +166,131 @@
        </div>
 	<!--end component slider-->
 </header><!-- .header-->
-<main class="content wrapper">
-	<div class="link-list">
-		<ul>
-			<li>
-				<a href="#" title="Продажа"><span>продажа</span></a>
-			</li>
-			<li>
-				<a href="#" title="Установка"><span>установка</span></a>
-			</li>
-			<li>
-				<a href="#" title="Сервис"><span>сервис</span></a>
-			</li>
-		</ul>
-	</div>
-	<!--start component catalog-product-list-->
-		<div class="cat-product-list-wrapper">
-			<h2 class="component-header">Каталог товаров</h2>
-			<div class="cat-product-list">
-				<!--foreach $arResult-->
-				<div class="cart-product-row">
-					<a class="cat-product-cell" href="#" title="Акустика">
-						<span class="cat-product-name">Акустика</span>
-						<img src="/images/akustika.png" class="cat-product-pic" alt="#">
-					</a>
-					<a class="cat-product-cell" href="#" title="Усилители">
-						<span class="cat-product-name">Усилители</span>
-						<img src="/images/usilitel.png" class="cat-product-pic" alt="#">
-					</a>
-					<a class="cat-product-cell" href="#" title="Сабвуферы">
-						<span class="cat-product-name">Сабвуферы</span>
-						<img src="/images/sub.png" class="cat-product-pic" alt="#">
-					</a>
-					<a class="cat-product-cell" href="#" title="Моноблоки">
-						<span class="cat-product-name">Моноблоки</span>
-						<img src="/images/monoblock.png" class="cat-product-pic" alt="#">
-					</a>
-					<a class="cat-product-cell" href="#" title="Аудиоресиверы">
-						<span class="cat-product-name">Аудиоресиверы</span>
-						<img src="/images/resiv.png" class="cat-product-pic" alt="#">
-					</a>
+<main class="content">
+	<div class="wrapper">
+		<div class="link-list">
+			<ul>
+				<li>
+					<a href="#" title="Продажа"><span>продажа</span></a>
+				</li>
+				<li>
+					<a href="#" title="Установка"><span>установка</span></a>
+				</li>
+				<li>
+					<a href="#" title="Сервис"><span>сервис</span></a>
+				</li>
+			</ul>
+		</div>
+		<!--start component catalog-product-list-->
+			<div class="cat-product-list-wrapper">
+				<h2 class="component-header">Каталог товаров</h2>
+				<div class="cat-product-list">
+					<!--foreach $arResult-->
+					<div class="cart-product-row">
+						<a class="cat-product-cell" href="#" title="Акустика">
+							<span class="cat-product-name">Акустика</span>
+							<img src="/images/akustika.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Усилители">
+							<span class="cat-product-name">Усилители</span>
+							<img src="/images/usilitel.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Сабвуферы">
+							<span class="cat-product-name">Сабвуферы</span>
+							<img src="/images/sub.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Моноблоки">
+							<span class="cat-product-name">Моноблоки</span>
+							<img src="/images/monoblock.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Аудиоресиверы">
+							<span class="cat-product-name">Аудиоресиверы</span>
+							<img src="/images/resiv.png" class="cat-product-pic" alt="#">
+						</a>
+					</div>
+						
+					<div class="cart-product-row">
+						<a class="cat-product-cell" href="#" title="Навигаторы">
+							<span class="cat-product-name">Навигаторы</span>
+							<img src="/images/nav.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Парктороники">
+							<span class="cat-product-name">Парктороники</span>
+							<img src="/images/partktr.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Аксессуары">
+							<span class="cat-product-name">Аксессуары</span>
+							<img src="/images/aks.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Шумоизоляция">
+							<span class="cat-product-name">Шумоизоляция</span>
+							<img src="/images/shum.png" class="cat-product-pic" alt="#">
+						</a>
+						<a class="cat-product-cell" href="#" title="Подиумы">
+							<span class="cat-product-name">Подиумы</span>
+							<img src="/images/pod.png" class="cat-product-pic" alt="#">
+						</a>
+					</div>
+					<!--end foreach-->
 				</div>
-					
-				<div class="cart-product-row">
-					<a class="cat-product-cell" href="#" title="Навигаторы">
-						<span class="cat-product-name">Навигаторы</span>
-						<img src="/images/nav.png" class="cat-product-pic" alt="#">
+			</div>
+		<!--end component catalog-product-list-->
+	
+		<!--start include area official representative-->
+		<a class="official-rep" href="#" title="#">
+			<span>официальное представительство</span>
+		</a>
+		<!--end include area official representative-->
+	</div>	
+	<!--start component best-product-->
+	<div class="best-product-wrapper">
+		<div class="wrapper">
+			<h2 class="component-header">Лучшие товары</h2>
+			<div class="best-product-list">
+				<!--foreach $arResult-->
+				<div class="best-product-cell">
+					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/radar-1.png") no-repeat scroll center 0;'>
 					</a>
-					<a class="cat-product-cell" href="#" title="Парктороники">
-						<span class="cat-product-name">Парктороники</span>
-						<img src="/images/partktr.png" class="cat-product-pic" alt="#">
+					<a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
+					<div class="product-path">
+						<span>Автоэлектрика / Антирадары</span>
+					</div>					
+					<div class="best-product-bottom-item">
+						<ul class="best-product-price">
+							<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+							<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+						</ul>
+						<div class="best-product-tocart">
+							<button class="tocart-btn hvr-buzz">в корзину</button>
+							<a href="#" class="best-product-ico" title="#"></a>
+						</div>
+					</div>
+				</div>
+
+								<div class="best-product-cell">
+					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/us-1.png") no-repeat scroll center 0;'>
 					</a>
-					<a class="cat-product-cell" href="#" title="Аксессуары">
-						<span class="cat-product-name">Аксессуары</span>
-						<img src="/images/aks.png" class="cat-product-pic" alt="#">
-					</a>
-					<a class="cat-product-cell" href="#" title="Шумоизоляция">
-						<span class="cat-product-name">Шумоизоляция</span>
-						<img src="/images/shum.png" class="cat-product-pic" alt="#">
-					</a>
-					<a class="cat-product-cell" href="#" title="Подиумы">
-						<span class="cat-product-name">Подиумы</span>
-						<img src="/images/pod.png" class="cat-product-pic" alt="#">
-					</a>
+					<a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
+					<div class="product-path">
+						<span>Автозвук / Усилители</span>
+					</div>					
+					<div class="best-product-bottom-item">
+						<ul class="best-product-price">
+							<li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
+							<li class="best-product-old-price">39 500<span class="rub"> P</span></li>
+						</ul>
+						<div class="best-product-tocart">
+							<button class="tocart-btn hvr-buzz">в корзину</button>
+							<a href="#" class="best-product-ico" title="#"></a>
+						</div>
+					</div>
 				</div>
 				<!--end foreach-->
 			</div>
 		</div>
-	<!--end component catalog-product-list-->
+	</div>
+	
+	<!--end component best-product-->
 </main><!-- .content -->
 
 
