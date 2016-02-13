@@ -471,6 +471,7 @@ body {
     margin-top: 35px;
 }
 .cat-product-name {
+		position:relative;
     font-size: 1.2em;
     left: 0;
     text-align: center;
@@ -478,25 +479,43 @@ body {
     width: 100%;
 		color:#000;
 		font-family: Roboto-Medium;
+		background:#eaeaea;
+}
+.cat-product-name:before{
+	position:absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #eaeaea  transparent transparent transparent;
+	bottom:-10px;
+	left: 96px;
+	content:"";
 }
 .cat-product-list-wrapper .component-header {
     margin-bottom: 20px;
 }
 .cat-product-cell {
 		position:relative;
-		border-bottom: 1px solid #b8b8b8;
-    border-right: 1px solid #b8b8b8;
+		border: 1px solid #b8b8b8;
     display: block;
     float: left;
     height: 128px;
     width: 198px;
+		margin-left: -1px;
+    margin-bottom: -1px;
 		text-align:center;
 }
-.cat-product-cell:nth-child(5n+1) {
-    border-left: 1px solid #b8b8b8;
+.cat-product-cell:hover{
+	border:1px solid #f46e28;
+	z-index:1;
 }
-.cat-product-cell:nth-child(-n + 5) {
-    border-top: 1px solid #b8b8b8;
+.cat-product-cell:hover .cat-product-name{
+	background-color:#fcd3be;
+}
+.cat-product-cell:hover .cat-product-name:before{
+	border-color: #fcd3be  transparent transparent transparent;
+
 }
 .cat-product-list::after {
     clear: both;
@@ -507,16 +526,30 @@ body {
     padding-top: 72px;
 }
 .cat-product-cell:first-child .cat-product-name {
-    top: 15px;
+		padding-top:15px;
+		padding-bottom:15px;
+    top: 0;
     position: absolute;
 }
 .cat-product-cell:nth-child(2n) {
     padding-bottom: 72px;
 }
 .cat-product-cell:nth-child(2n) .cat-product-name {
-    bottom: 15px;
+    bottom: 0;
     position: absolute;
+		padding-top:15px;
+		padding-bottom:15px;
 }
+.cat-product-cell:nth-child(2n) .cat-product-name:before {
+    top: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		border-color: transparent transparent #eaeaea  transparent;
+}
+
+
 .cat-product-cell:nth-child(2n) .cat-product-pic {
     margin-top: 23px;
 }
@@ -524,7 +557,9 @@ body {
     padding-top: 72px;
 }
 .cat-product-cell:nth-child(2n+1) .cat-product-name {
-    top: 15px;
+		padding-top:15px;
+		padding-bottom:15px;
+    top: 0;
     position: absolute;
 }
 
