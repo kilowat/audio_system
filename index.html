@@ -8,9 +8,9 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="/css/style.css" rel="stylesheet">
-  <link href="/css/swiper.min.css" rel="stylesheet">
+  <link href="/css/idangerous.swiper.css" rel="stylesheet">
 	 <script src="/js/jquery-2.2.0.min.js"></script>
-	 <script src="/js/swiper.min.js"></script>
+	 <script src="/js/idangerous.swiper.min.js"></script>
 	 <script src="/js/app.js"></script>
 </head>
 
@@ -34,12 +34,12 @@
 							</ul>
 						<!--end component liked-->
 						
-						<!--start component liked-->
+						<!--start component cart-main-->
 							<ul class="cart-main-wrapper">
 								<li>Корзина</li>
 								<li>Товаров(2)</li>
 							</ul>
-						<!--end component liked-->
+						<!--end component cart-main-->
 					</div>
 					<div class="search-wrapper">
 					<!--start compnent search-->	
@@ -117,46 +117,108 @@
             <div class="swiper-wrapper">
               <!--foreach $arResult-->
               <div class="swiper-slide">
-                <div class="slide-head">
-                  <h2>Нашли дешевли?<br>
-										<strong>Снизим цену!</strong>
-									</h2>
-                </div>
+								<div class="slide-content">
+									<div class="slide-head">
+										<h2>Нашли дешевли?<br>
+											<strong>Снизим цену!</strong>
+										</h2>
+									</div>
+								</div>
+                <div style="background: rgba(0, 0, 0, 0) url(/images/slide-1.jpg) no-repeat scroll top center / contain ;height: 100%;width: 100%;"> </div>
+              </div>
+							
+              <div class="swiper-slide">
+								<div class="slide-content">
+									<div class="slide-head">
+										<h2>Нашли дешевли?<br>
+											<strong>Снизим цену!</strong>
+										</h2>
+									</div>
+								</div>
                 <div style="background: rgba(0, 0, 0, 0) url(/images/slide-1.jpg) no-repeat scroll top center / contain ;height: 100%;width: 100%;"> </div>
               </div>
               <!--end foreach-->
             </div>
           </div>
-
-              <script>
-                $(document).ready(function(){
-                  var swiper = new Swiper('.swiper-container', {
-                    pagination: '.swiper-pagination',
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                    paginationClickable: true,
-                    spaceBetween: 30,
-										centeredSlides: true,
-                    autoplay: 250000,
-                    autoplayDisableOnInteraction: false,
-                    loop: true
-                  });
-                })
-              </script>
 					<div class="slider-tools wrapper">
 					    <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
 					</div>
+              <script>
+                $(document).ready(function(){
+                  var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    loop: true
+                  });	
+									$('.swiper-button-next').on('click', function(e){
+										e.preventDefault()
+										swiper.swipePrev()
+									})
+									$('.swiper-button-prev').on('click', function(e){
+										e.preventDefault()
+										swiper.swipeNext()
+									})
+                })
+
+              </script>
        </div>
 	<!--end component slider-->
 </header><!-- .header-->
-<div class="wrapper">
-	<main class="content">
+<main class="content wrapper">
+	<div class="link-list">
+		<ul>
+			<li>
+				<a href="#" title="Продажа"><span>продажа</span></a>
+			</li>
+			<li>
+				<a href="#" title="Установка"><span>установка</span></a>
+			</li>
+			<li>
+				<a href="#" title="Сервис"><span>сервис</span></a>
+			</li>
+		</ul>
+	</div>
+	<!--start component catalog-product-list-->
+		<div class="cat-product-list-wrapper">
+			<h2 class="component-header">Каталог товаров</h2>
+			<div class="cat-product-list">
+				<!--foreach $arResult-->
+					<a class="cat-product-cell" href="#" title="Акустика">
+						<span class="cat-product-name">Акустика</span>
+						<img src="/images/akustika.png" class="cat-product-pic" alt="#">
+					</a>
+					<a class="cat-product-cell" href="#" title="Усилители">
+						<span class="cat-product-name">Усилители</span>
+						<img src="/images/usilitel.png" class="cat-product-pic" alt="#">
+					</a>
+					<a class="cat-product-cell" href="#" title="Сабвуферы">
+						<span class="cat-product-name">Сабвуферы</span>
+						<img src="/images/sub.png" class="cat-product-pic" alt="#">
+					</a>
+					<a class="cat-product-cell" href="#" title="Моноблоки">
+						<span class="cat-product-name">Моноблоки</span>
+						<img src="/images/monoblock.png" class="cat-product-pic" alt="#">
+					</a>
+					<a class="cat-product-cell" href="#" title="Аудиоресиверы">
+						<span class="cat-product-name">Аудиоресиверы</span>
+						<img src="/images/resiv.png" class="cat-product-pic" alt="#">
+					</a>
+					<a class="cat-product-cell" href="#" title="Навигаторы">
+						<span class="cat-product-name">Навигаторы</span>
+						<img src="/images/nav.png" class="cat-product-pic" alt="#">
+					</a>
+					<a class="cat-product-cell" href="#" title="Парктороники">
+						<span class="cat-product-name">Парктороники</span>
+						<img src="/images/partktr.png" class="cat-product-pic" alt="#">
+					</a>
+				<!--end foreach-->
+			</div>
+		</div>
+	<!--end component catalog-product-list-->
+</main><!-- .content -->
 
-	</main><!-- .content -->
-
-</div><!-- .wrapper -->
 
 <footer class="footer">
 </footer><!-- .footer -->

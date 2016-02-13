@@ -5,8 +5,9 @@ _app = function(){
 			var w = window.innerWidth;
 			var wCenter = $('header .wrapper').width()/2;
 			var pos = (w/2-wCenter);
-			$('.swiper-pagination').css('left',wCenter-$('.swiper-pagination').width()/2+'px');
+			$('.swiper-pagination').css('left',wCenter+'px');
 			$('.slide-head').css('left',pos+'px');
+		
 		}
 
 	}
