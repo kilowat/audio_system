@@ -9,9 +9,12 @@
 	<meta name="description" content="" />
 	<link href="/css/style.css" rel="stylesheet">
   <link href="/css/idangerous.swiper.css" rel="stylesheet">
-	 <script src="/js/jquery-2.2.0.min.js"></script>
-	 <script src="/js/idangerous.swiper.min.js"></script>
-	 <script src="/js/app.js"></script>
+	<link href="/css/slick.css" rel="stylesheet">
+  <link href="/css/slick-theme.css" rel="stylesheet">
+	<script src="/js/jquery-2.2.0.min.js"></script>
+	<script src="/js/idangerous.swiper.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script src="/js/slick.min.js"></script>
 </head>
 
 <body>
@@ -248,7 +251,8 @@
 			<h2 class="component-header">Лучшие товары</h2>
 			<div class="best-product-list">
 				<!--foreach $arResult-->
-				<div class="best-product-cell">
+				<!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
+				<div class="best-product-cell product-hit">
 					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/radar-1.png") no-repeat scroll center 0;'>
 					</a>
 					<a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
@@ -267,7 +271,7 @@
 					</div>
 				</div>
 
-				<div class="best-product-cell">
+				<div class="best-product-cell product-new">
 					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/us-1.png") no-repeat scroll center 0;'>
 					</a>
 					<a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
@@ -407,8 +411,127 @@
 			</div>
 		</div>
 	</div>
+	<!--end component best product-->
 	
-	<!--end component best-product-->
+	<!--start component brand list-->
+	<div class="brand-list-wrapper">
+		<div class="wrapper">
+			<h2 class="component-header">Бренды</h2>
+			<div class="brand-slider"">
+			<!--foreach $arResult-->
+				<a href="#" title=""><img src="/images/brend-1.png" alt="#"></a>
+				<a href="#" title=""><img src="/images/brend-1.png" alt="#"></a>
+				<a href="#" title=""><img src="/images/brend-1.png" alt="#"></a>
+				<a href="#" title=""><img src="/images/brend-1.png" alt="#"></a>
+				<a href="#" title=""><img src="/images/brend-1.png" alt="#"></a>
+				<a href="#" title=""><img src="/images/brend-1.png" alt="#"></a>
+				<a href="#" title=""><img src="/images/brend-1.png" alt="#"></a>
+			<!--endforeach-->
+			</div>
+		</div>
+		<script>
+			$('.brand-slider').slick({
+			  slidesToShow: 5,
+				autoplay: true,
+				autoplaySpeed: 10000,
+				
+			});
+		</script>
+	</div>
+	<!--end component brand list-->
+	
+<!--start component new-product (юзай для этого компонента тот же шаблон что и для лучший товар по макету вроде одинаковы)-->
+	<div class="best-product-wrapper">
+		<div class="wrapper">
+			<h2 class="component-header">Новинки</h2>
+			<div class="best-product-list">
+				<!--foreach $arResult-->
+				<!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
+				<div class="best-product-cell product-hit">
+					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/radar-1.png") no-repeat scroll center 0;'>
+					</a>
+					<a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
+					<div class="product-path">
+						<span>Автоэлектрика / Антирадары</span>
+					</div>					
+					<div class="best-product-bottom-item">
+						<ul class="best-product-price">
+							<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+							<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+						</ul>
+						<div class="best-product-tocart">
+							<button class="tocart-btn hvr-buzz">в корзину</button>
+							<a href="#" class="best-product-ico" title="#"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="best-product-cell product-new">
+					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/us-1.png") no-repeat scroll center 0;'>
+					</a>
+					<a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
+					<div class="product-path">
+						<span>Автозвук / Усилители</span>
+					</div>					
+					<div class="best-product-bottom-item">
+						<ul class="best-product-price">
+							<li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
+							<li class="best-product-old-price">39 500<span class="rub"> P</span></li>
+						</ul>
+						<div class="best-product-tocart">
+							<button class="tocart-btn hvr-buzz">в корзину</button>
+							<a href="#" class="best-product-ico" title="#"></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="best-product-cell">
+					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/radar-2.png") no-repeat scroll center 0;'>
+					</a>
+					<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+					<div class="product-path">
+						<span>Автоэлектрика / Антирадары</span>
+					</div>					
+					<div class="best-product-bottom-item">
+						<ul class="best-product-price">
+							<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+							<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+						</ul>
+						<div class="best-product-tocart">
+							<button class="tocart-btn hvr-buzz">в корзину</button>
+							<a href="#" class="best-product-ico" title="#"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="best-product-cell">
+					<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("/images/radar-3.png") no-repeat scroll center 0;'>
+					</a>
+					<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+					<div class="product-path">
+						<span>Автоэлектрика / Антирадары</span>
+					</div>					
+					<div class="best-product-bottom-item">
+						<ul class="best-product-price">
+							<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+							<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+						</ul>
+						<div class="best-product-tocart">
+							<button class="tocart-btn hvr-buzz">в корзину</button>
+							<a href="#" class="best-product-ico" title="#"></a>
+						</div>
+					</div>
+				</div>
+				<!--end foreach-->
+			</div>
+			<div class="ajax-btn-wrapper">
+				<button class="ajax-load-more-btn hvr-bounce-to-bottom">
+					показать еще
+				</button>
+			</div>
+		</div>
+	</div>
+	<!--end component best product-->
 </main><!-- .content -->
 
 
