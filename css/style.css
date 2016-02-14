@@ -598,6 +598,10 @@ body {
     width: 100%;
 		font-size:1.1em;
 		font-family:Roboto-Light;
+		background-color:#fff\9; /*ie*/
+}
+.link-list a:hover{
+	background-color:#f46e28\9 /*ie*/
 }
 .link-list span {
     display: table-cell;
@@ -834,6 +838,9 @@ body {
     margin-top: 6px;
     text-transform: uppercase;
 }
+.tocart-btn:hover{
+	background-color: #d34d07\9;/*ie*/
+}
 .best-product-cur-price .rub {
     border-bottom: 2px solid;
 		margin-left:2px;
@@ -941,6 +948,7 @@ body {
     display: inline-block;
     margin-top: 10px;
 		color:#b8b8b8;
+
 }
 .news-promo-text {
 		font-family:Roboto-Light;
@@ -955,6 +963,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 		font-family:Roboto-Light;
+		background-color:#fff\9 /*ie*/
+}
+.see-detail:hover{
+	color:#f79b6b\9 /*ie*/
 }
 /* Footer
 -----------------------------------------------------------------------------*/
@@ -971,7 +983,7 @@ body {
 
 .footer-row .footer-cell {
     float: left;
-    width: 24%;
+    width: 21%;
 }
 
 .footer-logo-section.footer-cell {
@@ -984,6 +996,7 @@ body {
     display: block;
 }
 .coop{
+	margin-top: 112px;
 	color:#818181;
 	font-family:Roboto-Light;
 }
@@ -1008,5 +1021,54 @@ body {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
+}
+.social-ico span:first-child{
+	  display: inline-block;
+    height: 37px;
+    width: 39px;
+		background-image: url("/images/soc-ico.png");
+}
+.social-ico .vk-ico{
+		background-position: 0 0%;
+}
+.social-ico .inst-ico {
+    background-position: 0 33%;
+}
+.social-ico .ok-ico {
+    background-position: 0 66%;
+}
+.social-ico .fs-ico {
+    background-position: 0 99%;
+}
+.social-ico {
+    margin-left: 27px;
+}
+.social-ico a {
+    color: #666666;
+    text-decoration: none;
+}
+.social-ico a:hover{
+	color:#f79b6b;
+}
+.soc-link {
+    left: 8px;
+    position: relative;
+    text-decoration: none;
+    top: -15px;
+}
+.social-widget-section.footer-cell {
+    width: 21%;
+}
+.botton-phone-section.footer-cell {
+		margin-top: 8px;
+    width: 17%;
+		 text-align: right;
+}
+
+.mailto-link {
+    color: #a3a3a3;
+    display: inline-block;
+    margin-bottom: 13px;
+    margin-top: 10px;
 }
 /*end component bottom menu*/
