@@ -127,8 +127,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 a{
 	color: #f46e28
 }
-a:hover, .link-hover:hover{
-	color:red;
+a:hover, .link-hover:hover,  .link-hover a:hover{
+	color:#f46e28 ;
 }
 
 body {
@@ -287,11 +287,8 @@ body {
 }
 
 .wrapper {
-	width: 1000px;
 	margin: 0 auto;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
+	width:1000px;
 }
 
 
@@ -602,9 +599,6 @@ body {
 		font-size:1.1em;
 		font-family:Roboto-Light;
 }
-.link-list a:hover{
-	color:#f46e28;
-}
 .link-list span {
     display: table-cell;
     vertical-align: middle;
@@ -739,11 +733,15 @@ body {
     vertical-align: middle;
 }
 .best-product-wrapper .component-header {
-    padding-bottom: 22px;
+    padding-bottom: 16px;
     padding-top: 32px;
 }
 .content {
-	padding: 0 0 100px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -225px;
+	padding-bottom: 70px;
 }
 
 /*start component best product(index-page)*/
@@ -851,7 +849,7 @@ body {
     height: 25px;
     margin-left: 11px;
     position: relative;
-    top: 5px;
+    top: 10px;
     width: 19px;
 }
 .best-product-ico:hover {
@@ -862,7 +860,7 @@ body {
 }
 .best-product-wrapper .ajax-load-more-btn {
     margin-top: 17px;
-		margin-bottom:20px;
+		margin-bottom:26px;
 }
 .ajax-load-more-btn {
 		background: rgba(0, 0, 0, 0) url("/images/arrow-down-ico.png") no-repeat scroll 95% center;
@@ -881,6 +879,7 @@ body {
 
 /*start component brand list(index page)*/
 .brand-list-wrapper {
+    margin-bottom: 32px;
     margin-top: 24px;
 }
 
@@ -891,15 +890,123 @@ body {
 .slick-list.draggable {
     padding-left: 25px;
     padding-top: 65px;
-
+}
 /*end component brand list*/
 
+/*start component news and promo (index page)*/
+.news-promo-wrapper .component-header {
+		margin-bottom: 20px;
+    margin-top: 25px;
+}
+/*end component news and promo*/
+.news-promo-pic {
+    border: 1px solid #ccc;
+    float: left;
+    height: 137px;
+    overflow: hidden;
+    width: 138px;
+}
+.news-promo-pic > a {
+    display: table-cell;
+    height: 138px;
+    text-align: center;
+    vertical-align: middle;
+    width: 138px;
+}
+.news-promo-cell::after, .news-promo-list:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.news-promo-name > a {
+    color: #000;
+    font-family: Roboto-Medium;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.news-promo-cell {
+    float: left;
+    margin-right: 10px;
+    width: 32.5%;
+}
+.news-promo-cell:nth-child(3n+3) {
+    margin-right: 0;
+}
+.news-promo-content {
+    float: left;
+    margin-left: 10px;
+    width: 52%;
+}
+.news-promo-section {
+    display: inline-block;
+    margin-top: 10px;
+		color:#b8b8b8;
+}
+.news-promo-text {
+		font-family:Roboto-Light;
+}
+
+.see-detail {
+    border: 1px solid #f79b6b;
+    display: inline-block;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 6px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+		font-family:Roboto-Light;
+}
 /* Footer
 -----------------------------------------------------------------------------*/
-.footer {
-	width: 1000px;
-	margin: -100px auto 0;
-	height: 100px;
-	background: #BFF08E;
-	position: relative;
+.footer, .push {
+	height:225px;
 }
+.footer-wrapper{
+	border-top:2px solid #f79b6b;
+}
+.footer{
+	height:225px;
+	padding-top: 17px;
+}
+
+.footer-row .footer-cell {
+    float: left;
+    width: 24%;
+}
+
+.footer-logo-section.footer-cell {
+    width: 27%;
+}
+
+.footer-row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.coop{
+	color:#818181;
+	font-family:Roboto-Light;
+}
+
+/*start component bottom menu*/
+.bottom-menu-section.footer-cell {
+    width: 35%;
+}
+
+.bottom-menu li {
+    margin-top: 8px;
+}
+.bottom-menu {
+    margin-top: 4px;
+}
+.bottom-menu > ul {
+    display: inline-block;
+    margin-left: 28px;
+}
+.bottom-menu a {
+		font-family:Roboto-Regular;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*end component bottom menu*/
