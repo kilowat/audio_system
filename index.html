@@ -1,662 +1,662 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<title>title</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="./css/style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>title</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="./css/style.css" rel="stylesheet">
   <link href="./css/idangerous.swiper.css" rel="stylesheet">
-	<link href="./css/slick.css" rel="stylesheet">
+  <link href="./css/slick.css" rel="stylesheet">
   <link href="./css/slick-theme.css" rel="stylesheet">
-	<script src="./js/jquery-2.2.0.min.js"></script>
-	<script src="./js/idangerous.swiper.min.js"></script>
-	<script src="./js/app.js"></script>
-	<script src="./js/slick.min.js"></script>
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/idangerous.swiper.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/slick.min.js"></script>
 </head>
 <body>
-	<header class="header">
-		<div class="wrapper">
-			<div class="top-section">
-				<div class="logo-block">
-					<a href="/" title="logo">
-						<img src="images/logo.png" alt="logo">
-					</a>
-				</div>
-				<div class="top-right-section">
-					<div class="top-components-wrapper">
-						<div class="cart-components-wrapper">
-							<!--start component liked-->
-								<ul class="cart-liked-wrapper">
-									<li>Избранное</li>
-									<li>Товаров (0)</li>
-								</ul>
-							<!--end component liked-->
-							
-							<!--start component cart-main-->
-								<ul class="cart-main-wrapper">
-									<li>Корзина</li>
-									<li>Товаров (2)</li>
-								</ul>
-							<!--end component cart-main-->
-						</div>
-						<div class="search-wrapper">
-						<!--start compnent search-->	
-							<input class="search-input" value="" placeholder="Найти товары">
-							<input type="submit" class="search-btn" value="">
-						<!--end component search-->
-						</div>
-					</div>
-					<div class="top-right-component-wrapper">
-					<!--start include area phones number-->
-						<ul class="top-phones">
-							<li>+7 (988) 246 43 21</li>
-							<li>+7 (988) 246 43 21</li>
-							<li>+7 (988) 246 43 21</li>
-						</ul>
-					<!--end include area phones number-->
-					</div>
-					<!--start component callback-->
-					<button class="call-btn link-hover">Заказать звонок</button>
-					<!--end component callback-->
-				</div>
-			</div>
-		</div>
-			<!--start component top menu-->
-			<nav class="nav-wrraper">
-				<div class="wrapper">
-					<ul class="top-menu">
-						<!--foreach $arResult-->
-						<li class="root-menu-item">
-							<a href="#" title="#" class="link-hover">магазин</a>
-							<ul class="child-menu-item">
-								<li>
-									<a href="#" title="#" class="link-hover">магазин2</a>
-								</li>
-								<li>
-									<a href="#" title="#" class="link-hover">магазин3</a>
-								</li>
-							</ul>
-						</li>
-						
-						<li class="root-menu-item"> 
-							<a href="#" title="#" class="link-hover">услуги</a>
-						</li>
-						
-						<li class="root-menu-item"> 
-							<a href="#" title="#" class="link-hover">новости</a>
-						</li>
-						
-						<li class="root-menu-item"> 
-							<a href="#" title="#" class="link-hover">скидки и акции</a>
-						</li>
-						
-						<li class="root-menu-item"> 
-							<a href="#" title="#" class="link-hover">наши работы</a>
-						</li>
-						
-						<li class="root-menu-item"> 
-							<a href="#" title="#" class="link-hover">оптовикам</a>
-						</li>
-						
-						<li class="root-menu-item"> 
-							<a href="#" title="#" class="link-hover">доставка и оплата</a>
-						</li>
-						
-						<li class="root-menu-item"> 
-							<a href="#" title="#" class="link-hover">контакты</a>
-						</li>
-						<!--end foreach-->
-					</ul>
-				</div>
-		</nav>
-	<!--start component main slider-->
-				 <div class="main-slider">
-					 <div class="swiper-container">
-							<div class="swiper-wrapper">
-								<!--foreach $arResult-->
-								<div class="swiper-slide">
-									<div class="slide-content">
-										<div class="slide-head">
-											<h2>Нашли дешевлe?<br>
-												<strong>Снизим цену!</strong>
-											</h2>
-										</div>
-									</div>
-									<div style="background: rgba(0, 0, 0, 0) url(./images/slide-1.jpg) no-repeat scroll top center / contain ;height: 100%;width: 100%;"> </div>
-								</div>
-								
-								<div class="swiper-slide">
-									<div class="slide-content">
-										<div class="slide-head">
-											<h2>Нашли дешевли?<br>
-												<strong>Снизим цену!</strong>
-											</h2>
-										</div>
-									</div>
-									<div style="background: rgba(0, 0, 0, 0) url(./images/slide-1.jpg) no-repeat scroll top center / contain ;height: 100%;width: 100%;"> </div>
-								</div>
-								<!--end foreach-->
-							</div>
-						</div>
-						<div class="slider-tools wrapper">
-								<div class="swiper-pagination"></div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-						</div>
-								<script>
-									$(document).ready(function(){
-										var swiper = new Swiper('.swiper-container', {
-											pagination: '.swiper-pagination',
-											paginationClickable: true,
-											loop: true
-										});	
-										$('.swiper-button-next').on('click', function(e){
-											e.preventDefault()
-											swiper.swipePrev()
-										})
-										$('.swiper-button-prev').on('click', function(e){
-											e.preventDefault()
-											swiper.swipeNext()
-										})
-									})
+  <header class="header">
+    <div class="wrapper">
+      <div class="top-section">
+        <div class="logo-block">
+          <a href="/" title="logo">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="top-right-section">
+          <div class="top-components-wrapper">
+            <div class="cart-components-wrapper">
+              <!--start component liked-->
+                <ul class="cart-liked-wrapper">
+                  <li>Избранное</li>
+                  <li>Товаров (0)</li>
+                </ul>
+              <!--end component liked-->
+              
+              <!--start component cart-main-->
+                <ul class="cart-main-wrapper">
+                  <li>Корзина</li>
+                  <li>Товаров (2)</li>
+                </ul>
+              <!--end component cart-main-->
+            </div>
+            <div class="search-wrapper">
+            <!--start compnent search-->  
+              <input class="search-input" value="" placeholder="Найти товары">
+              <input type="submit" class="search-btn" value="">
+            <!--end component search-->
+            </div>
+          </div>
+          <div class="top-right-component-wrapper">
+          <!--start include area phones number-->
+            <ul class="top-phones">
+              <li>+7 (988) 246 43 21</li>
+              <li>+7 (988) 246 43 21</li>
+              <li>+7 (988) 246 43 21</li>
+            </ul>
+          <!--end include area phones number-->
+          </div>
+          <!--start component callback-->
+          <button class="call-btn link-hover">Заказать звонок</button>
+          <!--end component callback-->
+        </div>
+      </div>
+    </div>
+      <!--start component top menu-->
+      <nav class="nav-wrraper">
+        <div class="wrapper">
+          <ul class="top-menu">
+            <!--foreach $arResult-->
+            <li class="root-menu-item">
+              <a href="#" title="#" class="link-hover">магазин</a>
+              <ul class="child-menu-item">
+                <li>
+                  <a href="#" title="#" class="link-hover">магазин2</a>
+                </li>
+                <li>
+                  <a href="#" title="#" class="link-hover">магазин3</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="root-menu-item"> 
+              <a href="#" title="#" class="link-hover">услуги</a>
+            </li>
+            
+            <li class="root-menu-item"> 
+              <a href="#" title="#" class="link-hover">новости</a>
+            </li>
+            
+            <li class="root-menu-item"> 
+              <a href="#" title="#" class="link-hover">скидки и акции</a>
+            </li>
+            
+            <li class="root-menu-item"> 
+              <a href="#" title="#" class="link-hover">наши работы</a>
+            </li>
+            
+            <li class="root-menu-item"> 
+              <a href="#" title="#" class="link-hover">оптовикам</a>
+            </li>
+            
+            <li class="root-menu-item"> 
+              <a href="#" title="#" class="link-hover">доставка и оплата</a>
+            </li>
+            
+            <li class="root-menu-item"> 
+              <a href="#" title="#" class="link-hover">контакты</a>
+            </li>
+            <!--end foreach-->
+          </ul>
+        </div>
+    </nav>
+  <!--start component main slider-->
+         <div class="main-slider">
+           <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <!--foreach $arResult-->
+                <div class="swiper-slide">
+                  <div class="slide-content">
+                    <div class="slide-head">
+                      <h2>Нашли дешевлe?<br>
+                        <strong>Снизим цену!</strong>
+                      </h2>
+                    </div>
+                  </div>
+                  <div style="background: rgba(0, 0, 0, 0) url(./images/slide-1.jpg) no-repeat scroll top center / contain ;height: 100%;width: 100%;"> </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="slide-content">
+                    <div class="slide-head">
+                      <h2>Нашли дешевли?<br>
+                        <strong>Снизим цену!</strong>
+                      </h2>
+                    </div>
+                  </div>
+                  <div style="background: rgba(0, 0, 0, 0) url(./images/slide-1.jpg) no-repeat scroll top center / contain ;height: 100%;width: 100%;"> </div>
+                </div>
+                <!--end foreach-->
+              </div>
+            </div>
+            <div class="slider-tools wrapper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+                <script>
+                  $(document).ready(function(){
+                    var swiper = new Swiper('.swiper-container', {
+                      pagination: '.swiper-pagination',
+                      paginationClickable: true,
+                      loop: true
+                    }); 
+                    $('.swiper-button-next').on('click', function(e){
+                      e.preventDefault()
+                      swiper.swipePrev()
+                    })
+                    $('.swiper-button-prev').on('click', function(e){
+                      e.preventDefault()
+                      swiper.swipeNext()
+                    })
+                  })
 
-								</script>
-				 </div>
-		<!--end component slider-->
-	</header><!-- .header-->
-	<main class="content">
-		<div class="wrapper">
-			<div class="link-list">
-				<ul>
-					<li>
-						<a href="#" title="Продажа" class="hvr-bounce-to-bottom"><span>продажа</span></a>
-					</li>
-					<li>
-						<a href="#" title="Установка" class="hvr-bounce-to-bottom"><span>установка</span></a>
-					</li>
-					<li>
-						<a href="#" title="Сервис" class="hvr-bounce-to-bottom"><span>сервис</span></a>
-					</li>
-				</ul>
-			</div>
-			<!--start component catalog-product-list-->
-				<div class="cat-product-list-wrapper">
-					<h2 class="component-header">Каталог товаров</h2>
-					<div class="cat-product-list">
-						<!--foreach $arResult-->
-						<div class="cart-product-row">
-							<a class="cat-product-cell" href="#" title="Акустика">
-								<span class="cat-product-name">Акустика</span>
-								<img src="./images/akustika.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Усилители">
-								<span class="cat-product-name">Усилители</span>
-								<img src="./images/usilitel.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Сабвуферы">
-								<span class="cat-product-name">Сабвуферы</span>
-								<img src="./images/sub.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Моноблоки">
-								<span class="cat-product-name">Моноблоки</span>
-								<img src="./images/monoblock.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Аудиоресиверы">
-								<span class="cat-product-name">Аудиоресиверы</span>
-								<img src="./images/resiv.png" class="cat-product-pic" alt="#">
-							</a>
-						</div>
-							
-						<div class="cart-product-row">
-							<a class="cat-product-cell" href="#" title="Навигаторы">
-								<span class="cat-product-name">Навигаторы</span>
-								<img src="./images/nav.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Парктороники">
-								<span class="cat-product-name">Парктороники</span>
-								<img src="./images/partktr.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Аксессуары">
-								<span class="cat-product-name">Аксессуары</span>
-								<img src="./images/aks.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Шумоизоляция">
-								<span class="cat-product-name">Шумоизоляция</span>
-								<img src="./images/shum.png" class="cat-product-pic" alt="#">
-							</a>
-							<a class="cat-product-cell" href="#" title="Подиумы">
-								<span class="cat-product-name">Подиумы</span>
-								<img src="./images/pod.png" class="cat-product-pic" alt="#">
-							</a>
-						</div>
-						<!--end foreach-->
-					</div>
-				</div>
-			<!--end component catalog-product-list-->
-		
-			<!--start include area official representative-->
-			<a class="official-rep" href="#" title="#">
-				<span>официальное представительство</span>
-			</a>
-			<!--end include area official representative-->
-		</div>	
-		<!--start component best-product-->
-		<div class="best-product-wrapper">
-			<div class="wrapper">
-				<h2 class="component-header">Лучшие товары</h2>
-				<div class="best-product-list">
-					<!--foreach $arResult-->
-					<!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
-					<div class="best-product-cell product-hit">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
+                </script>
+         </div>
+    <!--end component slider-->
+  </header><!-- .header-->
+  <main class="content">
+    <div class="wrapper">
+      <div class="link-list">
+        <ul>
+          <li>
+            <a href="#" title="Продажа" class="hvr-bounce-to-bottom"><span>продажа</span></a>
+          </li>
+          <li>
+            <a href="#" title="Установка" class="hvr-bounce-to-bottom"><span>установка</span></a>
+          </li>
+          <li>
+            <a href="#" title="Сервис" class="hvr-bounce-to-bottom"><span>сервис</span></a>
+          </li>
+        </ul>
+      </div>
+      <!--start component catalog-product-list-->
+        <div class="cat-product-list-wrapper">
+          <h2 class="component-header">Каталог товаров</h2>
+          <div class="cat-product-list">
+            <!--foreach $arResult-->
+            <div class="cart-product-row">
+              <a class="cat-product-cell" href="#" title="Акустика">
+                <span class="cat-product-name">Акустика</span>
+                <img src="./images/akustika.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Усилители">
+                <span class="cat-product-name">Усилители</span>
+                <img src="./images/usilitel.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Сабвуферы">
+                <span class="cat-product-name">Сабвуферы</span>
+                <img src="./images/sub.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Моноблоки">
+                <span class="cat-product-name">Моноблоки</span>
+                <img src="./images/monoblock.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Аудиоресиверы">
+                <span class="cat-product-name">Аудиоресиверы</span>
+                <img src="./images/resiv.png" class="cat-product-pic" alt="#">
+              </a>
+            </div>
+              
+            <div class="cart-product-row">
+              <a class="cat-product-cell" href="#" title="Навигаторы">
+                <span class="cat-product-name">Навигаторы</span>
+                <img src="./images/nav.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Парктороники">
+                <span class="cat-product-name">Парктороники</span>
+                <img src="./images/partktr.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Аксессуары">
+                <span class="cat-product-name">Аксессуары</span>
+                <img src="./images/aks.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Шумоизоляция">
+                <span class="cat-product-name">Шумоизоляция</span>
+                <img src="./images/shum.png" class="cat-product-pic" alt="#">
+              </a>
+              <a class="cat-product-cell" href="#" title="Подиумы">
+                <span class="cat-product-name">Подиумы</span>
+                <img src="./images/pod.png" class="cat-product-pic" alt="#">
+              </a>
+            </div>
+            <!--end foreach-->
+          </div>
+        </div>
+      <!--end component catalog-product-list-->
+    
+      <!--start include area official representative-->
+      <a class="official-rep" href="#" title="#">
+        <span>официальное представительство</span>
+      </a>
+      <!--end include area official representative-->
+    </div>  
+    <!--start component best-product-->
+    <div class="best-product-wrapper">
+      <div class="wrapper">
+        <h2 class="component-header">Лучшие товары</h2>
+        <div class="best-product-list">
+          <!--foreach $arResult-->
+          <!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
+          <div class="best-product-cell product-hit">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
 
-					<div class="best-product-cell product-new">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
-						<div class="product-path">
-							<span>Автозвук / Усилители</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
-								<li class="best-product-old-price">39 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
+          <div class="best-product-cell product-new">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
+            <div class="product-path">
+              <span>Автозвук / Усилители</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
+                <li class="best-product-old-price">39 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
 
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
 
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
-						<div class="product-path">
-							<span>Автозвук / Усилители</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
-								<li class="best-product-old-price">39 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
+            <div class="product-path">
+              <span>Автозвук / Усилители</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
+                <li class="best-product-old-price">39 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
 
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
-					<!--end foreach-->
-				</div>
-				<div class="ajax-btn-wrapper">
-					<button class="ajax-load-more-btn hvr-bounce-to-bottom">
-						показать еще
-					</button>
-				</div>
-			</div>
-		</div>
-		<!--end component best product-->
-		
-		<!--start component brand list-->
-		<div class="brand-list-wrapper">
-			<div class="wrapper">
-				<h2 class="component-header">Бренды</h2>
-				<div class="brand-slider">
-				<!--foreach $arResult-->
-					<a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
-					<a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
-					<a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
-					<a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
-					<a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
-					<a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
-					<a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
-				<!--endforeach-->
-				</div>
-			</div>
-			<script>
-				$('.brand-slider').slick({
-					slidesToShow: 5,
-					
-				});
-			</script>
-		</div>
-		<!--end component brand list-->
-		
-	<!--start component new-product-->
-		<div class="best-product-wrapper">
-			<div class="wrapper">
-				<h2 class="component-header">Новинки</h2>
-				<div class="best-product-list">
-					<!--foreach $arResult-->
-					<!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
-					<div class="best-product-cell product-hit">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          <!--end foreach-->
+        </div>
+        <div class="ajax-btn-wrapper">
+          <button class="ajax-load-more-btn hvr-bounce-to-bottom">
+            показать еще
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--end component best product-->
+    
+    <!--start component brand list-->
+    <div class="brand-list-wrapper">
+      <div class="wrapper">
+        <h2 class="component-header">Бренды</h2>
+        <div class="brand-slider">
+        <!--foreach $arResult-->
+          <a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
+          <a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
+          <a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
+          <a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
+          <a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
+          <a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
+          <a href="#" title=""><img src="./images/brend-1.png" alt="#"></a>
+        <!--endforeach-->
+        </div>
+      </div>
+      <script>
+        $('.brand-slider').slick({
+          slidesToShow: 5,
+          
+        });
+      </script>
+    </div>
+    <!--end component brand list-->
+    
+  <!--start component new-product-->
+    <div class="best-product-wrapper">
+      <div class="wrapper">
+        <h2 class="component-header">Новинки</h2>
+        <div class="best-product-list">
+          <!--foreach $arResult-->
+          <!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
+          <div class="best-product-cell product-hit">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
 
-					<div class="best-product-cell product-new">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
-						<div class="product-path">
-							<span>Автозвук / Усилители</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
-								<li class="best-product-old-price">39 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
+          <div class="best-product-cell product-new">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
+            <div class="product-path">
+              <span>Автозвук / Усилители</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">35 100<span class="rub"> P</span></li>
+                <li class="best-product-old-price">39 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
 
-					<div class="best-product-cell">
-						<a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
-						</a>
-						<a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
-						<div class="product-path">
-							<span>Автоэлектрика / Антирадары</span>
-						</div>					
-						<div class="best-product-bottom-item">
-							<ul class="best-product-price">
-								<li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-								<li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-							</ul>
-							<div class="best-product-tocart">
-								<button class="tocart-btn hvr-buzz">в корзину</button>
-								<a href="#" class="best-product-ico" title="#"></a>
-							</div>
-						</div>
-					</div>
-					<!--end foreach-->
-				</div>
-				<div class="ajax-btn-wrapper">
-					<button class="ajax-load-more-btn hvr-bounce-to-bottom">
-						показать еще
-					</button>
-				</div>
-			</div>
-		</div>
-		<!--end component new product-->
-		
-		<!--start component news and promo-->
-		<div class="news-promo-wrapper">
-			<div class="wrapper">
-				<h2 class="component-header">Новости и акции</h2>
-				<div class="news-promo-list">
-					<!--foreach $arResult-->
-						<div class="news-promo-cell">
-							<div class="news-promo-pic">
-								<a href="#" title="#"><img src="./images/news-img.png" alt="#"></a>
-							</div>
-							<div class="news-promo-content">
-								<h3 class="news-promo-name"><a href="#" class="link-hover">Заголовок новости новости</a></h3>
-								<span class="news-promo-section">Название раздела</span>
-								<p class="news-promo-text"> 
-									Сегодня стала популярным установка этих устройств на автомобиль. Оно фиксирует все дорожные нюансы...
-								</p>
-								<a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
-							</div>
-						</div>
-						
-						<div class="news-promo-cell">
-							<div class="news-promo-pic">
-								<a href="#" title="#"><img src="./images/news-img.png" alt="#"></a>
-							</div>
-							<div class="news-promo-content">
-								<h3 class="news-promo-name"><a href="#" class="link-hover">Заголовок новости новости</a></h3>
-								<span class="news-promo-section">Название раздела</span>
-								<p class="news-promo-text"> 
-									Сегодня стала популярным установка этих устройств на автомобиль. Оно фиксирует все дорожные нюансы...
-								</p>
-								<a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
-							</div>
-						</div>
-						
-						<div class="news-promo-cell">
-							<div class="news-promo-pic">
-								<a href="#" title="#"><img src="./images/news-img.png" alt="#"></a>
-							</div>
-							<div class="news-promo-content">
-								<h3 class="news-promo-name"><a href="#" class="link-hover">Заголовок новости новости</a></h3>
-								<span class="news-promo-section">Название раздела</span>
-								<p class="news-promo-text"> 
-									Сегодня стала популярным установка этих устройств на автомобиль. Оно фиксирует все дорожные нюансы...
-								</p>
-								<a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
-							</div>
-						</div>
-					<!--end foreach-->
-				</div>
-			</div>
-		</div>
-		<!--end component news and promo-->
-		<div class="push"><!--hack push footer to bottom don't delete--></div>
-	</main><!-- .content -->
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          <!--end foreach-->
+        </div>
+        <div class="ajax-btn-wrapper">
+          <button class="ajax-load-more-btn hvr-bounce-to-bottom">
+            показать еще
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--end component new product-->
+    
+    <!--start component news and promo-->
+    <div class="news-promo-wrapper">
+      <div class="wrapper">
+        <h2 class="component-header">Новости и акции</h2>
+        <div class="news-promo-list">
+          <!--foreach $arResult-->
+            <div class="news-promo-cell">
+              <div class="news-promo-pic">
+                <a href="#" title="#"><img src="./images/news-img.png" alt="#"></a>
+              </div>
+              <div class="news-promo-content">
+                <h3 class="news-promo-name"><a href="#" class="link-hover">Заголовок новости новости</a></h3>
+                <span class="news-promo-section">Название раздела</span>
+                <p class="news-promo-text"> 
+                  Сегодня стала популярным установка этих устройств на автомобиль. Оно фиксирует все дорожные нюансы...
+                </p>
+                <a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
+              </div>
+            </div>
+            
+            <div class="news-promo-cell">
+              <div class="news-promo-pic">
+                <a href="#" title="#"><img src="./images/news-img.png" alt="#"></a>
+              </div>
+              <div class="news-promo-content">
+                <h3 class="news-promo-name"><a href="#" class="link-hover">Заголовок новости новости</a></h3>
+                <span class="news-promo-section">Название раздела</span>
+                <p class="news-promo-text"> 
+                  Сегодня стала популярным установка этих устройств на автомобиль. Оно фиксирует все дорожные нюансы...
+                </p>
+                <a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
+              </div>
+            </div>
+            
+            <div class="news-promo-cell">
+              <div class="news-promo-pic">
+                <a href="#" title="#"><img src="./images/news-img.png" alt="#"></a>
+              </div>
+              <div class="news-promo-content">
+                <h3 class="news-promo-name"><a href="#" class="link-hover">Заголовок новости новости</a></h3>
+                <span class="news-promo-section">Название раздела</span>
+                <p class="news-promo-text"> 
+                  Сегодня стала популярным установка этих устройств на автомобиль. Оно фиксирует все дорожные нюансы...
+                </p>
+                <a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
+              </div>
+            </div>
+          <!--end foreach-->
+        </div>
+      </div>
+    </div>
+    <!--end component news and promo-->
+    <div class="push"><!--hack push footer to bottom don't delete--></div>
+  </main><!-- .content -->
 
 
-	<footer class="footer-wrapper">
-		<div class="footer wrapper">
-			<div class="footer-row">
-				<div class="footer-logo-section footer-cell">
-					<a href="/" title="logo"><img src="./images/bottom-logo.png" alt="logo"></a>
-					<div class="coop">©2016 «Автоаудиоцентр». Краснодар</div>
-				</div>
-				<div class="bottom-menu-section footer-cell">
-					<!--start component bottom menu-->
-						<div class="bottom-menu link-hover">
-							<!--foreach $arResult-->
-							<ul>
-								<li><a href="#" title="#">магазин</a></li>
-								<li><a href="#" title="#">услуги</a></li>
-								<li><a href="#" title="#">новости</a></li>
-								<li><a href="#" title="#">скидки и акции</a></li>
-							</ul>
-							<ul>
-								<li><a href="#" title="#">наши работы</a></li>
-								<li><a href="#" title="#">оптовикам</a></li>
-								<li><a href="#" title="#">доставка и оплата</a></li>
-								<li><a href="#" title="#">контакты</a></li>
-							</ul>
-							<!--end foreach-->
-						</div>
-					<!--end component bottom menu-->
-				</div>
-				<div class="social-widget-section footer-cell">
-					<!--start include area social icon-->
-					<ul class="social-ico">
-						<li>
-						<a href="#">
-							<span class="vk-ico"></span>
-							<span class="soc-link">В Контакте</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="inst-ico"></span>
-								<span class="soc-link">Instagram</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="ok-ico"></span>
-								<span class="soc-link">Одноклассники</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="fs-ico"></span>
-								<span class="soc-link">Facebook</span>
-							</a>
-						</li>
-					</ul>
-					<!--end include area social icon-->
-				</div>
-				<div class="botton-phone-section footer-cell">
-					<!--start include area phones number-->
-						<ul class="top-phones">
-							<li>+7 (988) 246 43 21</li>
-							<li>+7 (988) 246 43 21</li>
-						</ul>
-					<!--end include area phones number-->
+  <footer class="footer-wrapper">
+    <div class="footer wrapper">
+      <div class="footer-row">
+        <div class="footer-logo-section footer-cell">
+          <a href="/" title="logo"><img src="./images/bottom-logo.png" alt="logo"></a>
+          <div class="coop">©2016 «Автоаудиоцентр». Краснодар</div>
+        </div>
+        <div class="bottom-menu-section footer-cell">
+          <!--start component bottom menu-->
+            <div class="bottom-menu link-hover">
+              <!--foreach $arResult-->
+              <ul>
+                <li><a href="#" title="#">магазин</a></li>
+                <li><a href="#" title="#">услуги</a></li>
+                <li><a href="#" title="#">новости</a></li>
+                <li><a href="#" title="#">скидки и акции</a></li>
+              </ul>
+              <ul>
+                <li><a href="#" title="#">наши работы</a></li>
+                <li><a href="#" title="#">оптовикам</a></li>
+                <li><a href="#" title="#">доставка и оплата</a></li>
+                <li><a href="#" title="#">контакты</a></li>
+              </ul>
+              <!--end foreach-->
+            </div>
+          <!--end component bottom menu-->
+        </div>
+        <div class="social-widget-section footer-cell">
+          <!--start include area social icon-->
+          <ul class="social-ico">
+            <li>
+            <a href="#">
+              <span class="vk-ico"></span>
+              <span class="soc-link">В Контакте</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="inst-ico"></span>
+                <span class="soc-link">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="ok-ico"></span>
+                <span class="soc-link">Одноклассники</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fs-ico"></span>
+                <span class="soc-link">Facebook</span>
+              </a>
+            </li>
+          </ul>
+          <!--end include area social icon-->
+        </div>
+        <div class="botton-phone-section footer-cell">
+          <!--start include area phones number-->
+            <ul class="top-phones">
+              <li>+7 (988) 246 43 21</li>
+              <li>+7 (988) 246 43 21</li>
+            </ul>
+          <!--end include area phones number-->
 
-					<!--start component callback-->
-					<button class="call-btn link-hover">Заказать звонок</button>
-					<!--end component callback-->
-					<a href="mailto:post@aakuban.ru" class="mailto-link" title="post@aakuban.ru">post@aakuban.ru</a>
-					<span>г.Краснодар ул.Коммунаров 268</span>
-				</div>
-			</div>
-		</div>
-	</footer><!-- .footer -->
+          <!--start component callback-->
+          <button class="call-btn link-hover">Заказать звонок</button>
+          <!--end component callback-->
+          <a href="mailto:post@aakuban.ru" class="mailto-link" title="post@aakuban.ru">post@aakuban.ru</a>
+          <span>г.Краснодар ул.Коммунаров 268</span>
+        </div>
+      </div>
+    </div>
+  </footer><!-- .footer -->
 </body>
 </html>
