@@ -367,7 +367,7 @@ body {
 }
 .cart-liked-wrapper::before {
 		top: 3px;
-    background-image: url("/images/liked-ico.png");
+    background-image: url("../images/liked-ico.png");
     content: "";
     display: block;
     height: 25px;
@@ -391,7 +391,7 @@ body {
     width: 42%;
 }
 .cart-main-wrapper::before {
-		background-image: url("/images/cart-ico.png");
+		background-image: url("../images/cart-ico.png");
     content: "";
     display: block;
     height: 28px;
@@ -430,7 +430,7 @@ body {
     right: 21px;
     top: 9px;
     width: 22px;
-		background: rgba(0, 0, 0, 0) url("/images/search-ico.png") repeat scroll 0 0;
+		background: rgba(0, 0, 0, 0) url("../images/search-ico.png") repeat scroll 0 0;
 }
 /*end component search*/
 .top-section {
@@ -553,13 +553,13 @@ body {
     position: relative;
 }
 .swiper-button-prev:hover{
-	background: rgba(0, 0, 0, 0) url("/images/slider-arrow-right.png") no-repeat scroll 0 100%;
+	background: rgba(0, 0, 0, 0) url("../images/slider-arrow-right.png") no-repeat scroll 0 100%;
 }
 .swiper-button-next:hover{
-	background: rgba(0, 0, 0, 0) url("/images/slider-arrow-left.png") no-repeat scroll 0 100%;
+	background: rgba(0, 0, 0, 0) url("../images/slider-arrow-left.png") no-repeat scroll 0 100%;
 }
 .swiper-button-next {
-    background: rgba(0, 0, 0, 0) url("/images/slider-arrow-left.png") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../images/slider-arrow-left.png") no-repeat scroll 0 0;
     height: 32px;
     position: absolute;
     top: -240px;
@@ -568,7 +568,7 @@ body {
 		cursor:pointer;
 }
 .swiper-button-prev {
-    background: rgba(0, 0, 0, 0) url("/images/slider-arrow-right.png") no-repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../images/slider-arrow-right.png") no-repeat scroll 0 0;
     height: 32px;
     position: absolute;
     top: -240px;
@@ -748,7 +748,7 @@ body {
 
 /*end component catalog product list (index page)*/
 .official-rep {
-		background-image: url("/images/offecial-baner.png");
+		background-image: url("../images/offecial-baner.png");
     background-position: right center;
     background-repeat: no-repeat;
     border: 1px solid;
@@ -884,7 +884,7 @@ body {
 		margin-left:2px;
 }
 .best-product-ico {
-    background: rgba(0, 0, 0, 0) url("/images/liked-product-ico.png") no-repeat  scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../images/liked-product-ico.png") no-repeat  scroll 0 0;
     display: inline-block;
     height: 25px;
     margin-left: 11px;
@@ -893,7 +893,7 @@ body {
     width: 19px;
 }
 .best-product-ico:hover {
-    background: rgba(0, 0, 0, 0) url("/images/liked-product-ico.png") no-repeat scroll 0 100%;
+    background: rgba(0, 0, 0, 0) url("../images/liked-product-ico.png") no-repeat scroll 0 100%;
 }
 .ajax-btn-wrapper{
 	text-align:center;
@@ -903,7 +903,7 @@ body {
 		margin-bottom:26px;
 }
 .ajax-load-more-btn {
-		background: rgba(0, 0, 0, 0) url("/images/arrow-down-ico.png") no-repeat scroll 95% center;
+		background: rgba(0, 0, 0, 0) url("../images/arrow-down-ico.png") no-repeat scroll 95% center;
     border: 1px solid #f46e28;
     color: #f46e28;
     cursor: pointer;
@@ -1058,7 +1058,7 @@ body {
 	  display: inline-block;
     height: 37px;
     width: 39px;
-		background-image: url("/images/soc-ico.png");
+		background-image: url("../images/soc-ico.png");
 }
 .social-ico .vk-ico{
 		background-position: 0 0%;
