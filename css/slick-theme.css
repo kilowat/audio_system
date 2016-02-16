@@ -18,7 +18,7 @@
 /* Arrows */
 .slick-prev,
 .slick-prev, .slick-next {
-	background:#fff;
+	background-color:#fff;
     background-image: url("/images/s-mini-left.png");
     border: medium none;
     color: transparent;
@@ -33,9 +33,10 @@
     position: absolute;
     top: 50%;
     width: 17px;
+    background-repeat: no-repeat;
 }
 .slick-next {
-	background-image: url("/images/s-mini-right.png");
+    background-image: url("/images/s-mini-right.png");
 }
 .slick-prev:hover,
 .slick-prev:focus,
