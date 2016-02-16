@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+
   <title>title</title>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
@@ -10,10 +13,11 @@
   <link href="./css/idangerous.swiper.css" rel="stylesheet">
   <link href="./css/slick.css" rel="stylesheet">
   <link href="./css/slick-theme.css" rel="stylesheet">
-  <script src="./js/jquery-2.2.0.min.js"></script>
   <script src="./js/idangerous.swiper.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/slick.min.js"></script>
+    <!--[if lt IE 8]><link href="./css/style-ie8.css" rel="stylesheet"><![endif]-->
+
 </head>
 <body>
   <header class="header">
@@ -250,7 +254,8 @@
           <!--foreach $arResult-->
           <!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
           <div class="best-product-cell product-hit">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-1.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">
@@ -269,7 +274,8 @@
           </div>
 
           <div class="best-product-cell product-new">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/us-1.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
             <div class="product-path">
@@ -288,26 +294,29 @@
           </div>
           
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
             </a>
-            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
-            <div class="product-path">
-              <span>Автоэлектрика / Антирадары</span>
-            </div>          
-            <div class="best-product-bottom-item">
-              <ul class="best-product-price">
-                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
-                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
-              </ul>
-              <div class="best-product-tocart">
-                <button class="tocart-btn hvr-buzz">в корзину</button>
-                <a href="#" class="best-product-ico" title="#"></a>
-              </div>
-            </div>
-          </div>
 
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub"> P</span></li>
+                <li class="best-product-old-price">48 500<span class="rub"> P</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">
@@ -325,7 +334,8 @@
             </div>
           </div>
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-1.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">
@@ -344,7 +354,8 @@
           </div>
 
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/us-1.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
             <div class="product-path">
@@ -363,8 +374,10 @@
           </div>
           
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
             </a>
+
             <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">
               <span>Автоэлектрика / Антирадары</span>
@@ -380,9 +393,10 @@
               </div>
             </div>
           </div>
-
+          
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">
@@ -442,8 +456,9 @@
         <div class="best-product-list">
           <!--foreach $arResult-->
           <!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
-          <div class="best-product-cell product-hit">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-1.png") no-repeat scroll center 0;'>
+   <div class="best-product-cell product-hit">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-1.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">
@@ -462,7 +477,8 @@
           </div>
 
           <div class="best-product-cell product-new">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/us-1.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/us-1.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
             <div class="product-path">
@@ -481,8 +497,10 @@
           </div>
           
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-2.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
             </a>
+
             <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">
               <span>Автоэлектрика / Антирадары</span>
@@ -498,9 +516,10 @@
               </div>
             </div>
           </div>
-
+          
           <div class="best-product-cell">
-            <a href="#" title="#" class="best-product-pic" style=' background: rgba(0, 0, 0, 0) url("./images/radar-3.png") no-repeat scroll center 0;'>
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
             </a>
             <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
             <div class="product-path">

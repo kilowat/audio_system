@@ -1,0 +1,95 @@
+.top-menu .root-menu-item {
+  display: inline;
+  float: left;
+  padding-top: 15px;
+  height: 33px;
+}
+.call-btn{
+  background-color:#fff;
+  clear: both;
+
+}
+.cart-main-wrapper{
+  background-image: url("../images/cart-ico.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.cart-main-wrapper {
+  padding-left: 20px;
+}
+.cart-liked-wrapper {
+  background-image: url("../images/liked-ico.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.search-btn {
+  background-image: url("../images/search-ico.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.link-list > ul li {
+    display: inline;
+    float: left;
+    width: 30.1%;
+
+}
+
+.link-list > ul li span{
+  line-height: 2.4em;
+
+}
+.cat-product-cell{
+  height: 200px;
+
+}
+.cat-product-pic{
+  padding-top: 50px;
+}
+.cat-product-cell:nth-child(2n+1) {
+    padding-top: 0px
+}
+.cat-product-cell:first-child {
+    padding-top: 0px;
+}
+.cat-product-cell .cat-product-name {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+}
+.official-rep{
+  clear: both;
+}
+.best-product-bottom-item{
+  left: 10px;
+}
+.best-product-ico {
+    background: #fff url("../images/liked-product-ico.png") no-repeat scroll 0 0;
+}
+.best-product-price li{
+  float: left;
+}
+.best-product-tocart{
+  clear: both;
+}
+
+.slick-slider{
+  overflow: hidden;
+}
+.best-product-cur-price .rub, .best-product-old-price .rub {
+  line-height: 1em;
+  border-bottom:0px;
+}
+.news-promo-cell{
+  width: 32%;
+}
+.see-detail:hover{
+  background-color: #f46e28;
+  color: #fff;
+}
+.bottom-menu > ul{
+  float: left;
+}

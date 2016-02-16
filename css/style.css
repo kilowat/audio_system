@@ -685,7 +685,9 @@ body {
     position: relative;
     text-align: center;
     width: 198px;
+    overflow: hidden;
 }
+
 .cat-product-cell:hover{
   border:1px solid #f46e28;
   z-index:1;
@@ -903,7 +905,7 @@ body {
     margin-bottom:26px;
 }
 .ajax-load-more-btn {
-    background: rgba(0, 0, 0, 0) url("../images/arrow-down-ico.png") no-repeat scroll 95% center;
+    background: #fff url("../images/arrow-down-ico.png") no-repeat scroll 95% center;
     border: 1px solid #f46e28;
     color: #f46e28;
     cursor: pointer;
