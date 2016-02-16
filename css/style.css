@@ -491,6 +491,7 @@ body {
     padding-top: 10px;
     position: absolute;
     width: 100%;
+
 }
 .child-menu-item li {
     padding-left: 15px;
@@ -537,7 +538,7 @@ body {
 
 /*start component main slider*/
 .main-slider{
-  position: relative;
+ 
 }
 .swiper-container{
   height: 449px;
