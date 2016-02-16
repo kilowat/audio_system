@@ -59,6 +59,11 @@
     padding-top: 15px;
     position: absolute;
     top: 0;
+    border:none;
+    
+}
+.official-rep > span{
+  line-height: 4em;
 }
 .official-rep{
   clear: both;

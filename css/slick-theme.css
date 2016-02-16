@@ -18,7 +18,7 @@
 /* Arrows */
 .slick-prev,
 .slick-prev, .slick-next {
-	background:rgba(0,0,0,0);
+	background:#fff;
     background-image: url("/images/s-mini-left.png");
     border: medium none;
     color: transparent;

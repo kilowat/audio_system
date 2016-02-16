@@ -537,6 +537,8 @@ body {
     font-size: 2.5em;
     margin-top: 42px;
     position: absolute;
+    left: 0px;
+    top: 0px;
     text-transform: uppercase;
 }
 .main-slider .slide-head h2 {
@@ -553,10 +555,10 @@ body {
     position: relative;
 }
 .swiper-button-prev:hover{
-  background: rgba(0, 0, 0, 0) url("../images/slider-arrow-right.png") no-repeat scroll 0 100%;
+  background: url("../images/slider-arrow-right.png") no-repeat scroll 0 100%;
 }
 .swiper-button-next:hover{
-  background: rgba(0, 0, 0, 0) url("../images/slider-arrow-left.png") no-repeat scroll 0 100%;
+  background: url("../images/slider-arrow-left.png") no-repeat scroll 0 100%;
 }
 .swiper-button-next {
     background: rgba(0, 0, 0, 0) url("../images/slider-arrow-left.png") no-repeat scroll 0 0;
