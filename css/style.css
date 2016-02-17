@@ -815,6 +815,9 @@ body {
     text-align: center;
     width: 209px;
 }
+.best-product-list{
+  clear: both;
+}
 .best-product-pic{
   height: 138px;
   display:block;
@@ -1021,11 +1024,11 @@ body {
 /*********************start product list page styles*******************************/
 .content-left {
     float: left;
-    width: 25%;
+    width: 24%;
 }
 .content-right{
   float: left;
-  width: 74.9%;
+  width: 75.9%;
 }
 
 /*start component catalog-left-menu*/
