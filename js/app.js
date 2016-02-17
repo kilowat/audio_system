@@ -13,4 +13,6 @@ _app = function(){
 }
 $(document).ready(function(){
 	_app().sliderResize();
+
+	
 });
