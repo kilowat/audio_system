@@ -41,9 +41,24 @@
   line-height: 2.4em;
 
 }
+.hvr-bounce-to-bottom:before {
+  background-color: #fff;
+}
+.hvr-bounce-to-bottom:hover{
+  color: #f46e28;
+  background-color: #fff; 
+}
 .cat-product-cell{
   height: 200px;
 
+}
+.see-detail{
+  color: #f46e28;
+}
+.see-detail.hvr-bounce-to-bottom:hover, .ajax-load-more-btn:hover{
+  color: #d44e08;
+
+  
 }
 .cat-product-pic{
   padding-top: 50px;
@@ -61,6 +76,12 @@
     top: 0;
     border:none;
     
+}
+.nav-wrapper{
+  clear: both;
+}
+.top-section{
+  height: 109px;
 }
 .cart-product-row a{
   text-decoration: none;

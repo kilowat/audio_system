@@ -182,7 +182,6 @@ body {
   height: 100%;
   color:#000;
 }
-
 /* Buzz */
 @-webkit-keyframes hvr-buzz {
   50% {
@@ -207,7 +206,6 @@ body {
     transform: translateX(-3px) rotate(-2deg);
   }
 }
-
 .hvr-buzz {
   display: inline-block;
   vertical-align: middle;
@@ -274,6 +272,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
+
 .rub {
 
 } 
