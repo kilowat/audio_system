@@ -7,10 +7,10 @@ $(document).ready(function(){
 	var viewObject = $('#catalog-view');
 	var templateViewCookie = Cookies.get(templateNameKey);
 
-	if(templateViewCookie!==null){
+	if(templateViewCookie>0){
 		clearSelect();
 		$(templateViewCookie).addClass(selected);
-		
+
 		if(templateViewCookie==templateViewTable){
 			viewObject.removeClass(listStyleClass);
 		}
