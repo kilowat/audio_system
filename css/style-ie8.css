@@ -118,3 +118,19 @@
 .bottom-menu > ul{
   float: left;
 }
+.sort-block .sort-cell>input{
+  display: block;
+}
+.sort-block .sort-cell{
+  float: left;
+
+}
+.sort-block .sort-cell:first-child{
+  width: 142px;
+}
+.sort-block .sort-cell:first-child{
+  line-height: 2.1em;
+}
+.sort-block .sort-cell > input{
+  width: 180px;
+}

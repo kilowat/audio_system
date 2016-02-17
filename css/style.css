@@ -1076,17 +1076,30 @@ body {
 
 .sort-block {
     display: table-row;
-    font-size: 1.2em;
+    
 }
 .sort-cell {
     display: table-cell;
 }
 .sort-block .sort-cell:first-child span {
     margin-right: 10px;
+    font-size: 1.2em;
 }
 .sort-block .sort-cell > input {
-    height: 29px;
+    height: 32px;
     margin-right: 5px;
+    padding-left: 10px;
+    width: 184px;
+    font-size: 1,1em;
+}
+.sort-block .sort-cell:last-child input{
+  margin-right: 0px;
+}
+.product-list-header>h1{
+  float: left;
+}
+.template-view-select{
+  float: right;
 }
 /*end component product list (catalog page)*/
 
