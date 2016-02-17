@@ -172,7 +172,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 a{
   color: #f46e28
 }
-a:hover, .link-hover:hover,  .link-hover a:hover{
+a:hover, .link-hover:hover,  .link-hover a:hover, .selected{
   color:#f46e28 ;
 }
 
@@ -479,7 +479,8 @@ body {
 .nav-wrraper {
     background: #f7f7f7 none repeat scroll 0 0;
     border-top: 1px solid #b8b8b8;
-    height: 48px;
+    border-bottom: 1px solid #b8b8b8;
+    height: 47px;
 }
 .top-menu .child-menu-item{
     background: #f7f7f7 none repeat scroll 0 0;
@@ -1016,10 +1017,45 @@ body {
 .see-detail:hover{
   color:#f79b6b\9 /*ie*/
 }
+
+/*********************start product list page styles*******************************/
+.content-left {
+    float: left;
+    width: 25%;
+}
+.content-right{
+  float: left;
+  width: 74.9%;
+}
+
+/*start component catalog-left-menu*/
+.cat-left-menu-head {
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 29px;
+    margin-bottom: 23px;
+}
+.cat-left-menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2em;
+
+}
+.cat-left-menu .root-menu-item {
+    margin-top: 15px;
+}
+.cat-left-menu .child-menu-item{
+  display: none;
+}
+/*end component catalog-left-menu*/
+
+/*********************end product list page styles*******************************/
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer, .push {
   height:225px;
+  clear: both;
 }
 .footer-wrapper{
   border-top:2px solid #f79b6b;
