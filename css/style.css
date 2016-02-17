@@ -918,7 +918,7 @@ body {
 .ajax-btn-wrapper{
   text-align:center;
 }
-.best-product-wrapper .ajax-load-more-btn {
+.ajax-load-more-btn {
     margin-top: 17px;
     margin-bottom:26px;
 }
@@ -1030,7 +1030,9 @@ body {
   float: left;
   width: 75.9%;
 }
-
+.content-right .product-list-wrapper{
+  padding-left: 8px;
+}
 /*start component catalog-left-menu*/
 .cat-left-menu-head {
     font-size: 2em;
@@ -1108,6 +1110,7 @@ body {
   margin-top: 6px;
 }
 .product-list-header {
+    padding-bottom: 53px;
     padding-top: 32px;
 }
 .view-select{
