@@ -173,18 +173,38 @@
           <ul class="bread-crumbs">
             <!--foreach $arResult-->
               <li>
-                <a href="" title="">Главная</a>
+                <a href="" title="" class="link-hover">Главная</a>
               </li>
               <li>
-                <span>Заголовок раздела</span>
+                <span>> Заголовок раздела</span>
               </li>
             <!--end foreach-->
           </ul>
         <!--end component bread-crumbs-->
+
+      <!--start component product list (catalog page)-->
+      <div class="product-list-wrapper">
+        <div class="sort-block">
+          <div class="sort-cell">
+            <span>Сортировать по:</span>
+          </div>
+          <div class="sort-cell">
+            <input type="text" placeholer="Название">
+          </div>
+          <div class="sort-cell">
+            <input type="text" placeholer="Цена">
+          </div>
+          <div class="sort-cell">
+            <input type="text" placeholer="Популярность">
+          </div>
+        </div>
       </div>
+    <!--end component product list (catalog page)-->
+    
     </div>
-    <!--end component news and promo-->
-    <div class="push"><!--hack push footer to bottom don't delete--></div>
+  </div>
+
+  <div class="push"><!--hack push footer to bottom don't delete--></div>
   </main><!-- .content -->
 
 

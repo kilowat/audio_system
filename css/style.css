@@ -1036,10 +1036,16 @@ body {
     margin-bottom: 23px;
 }
 .cat-left-menu a {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.2em;
-
+    background-image: url("../images/menu-arrow.png");
+    background-position: 0 -57%;
+    background-repeat: no-repeat;
+    color: #000;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-left: 11px;
+}
+.cat-left-menu a:hover{
+  background-position: 0 200%;
 }
 .cat-left-menu .root-menu-item {
     margin-top: 15px;
@@ -1047,7 +1053,42 @@ body {
 .cat-left-menu .child-menu-item{
   display: none;
 }
+
+
 /*end component catalog-left-menu*/
+
+/*start component bread crumbs*/
+.bread-crumbs li {
+    display: inline;
+}
+
+.bread-crumbs {
+    margin-top: 27px;
+    margin-bottom: 28px;
+}
+.bread-crumbs a, .bread-crumbs span {
+  color: #b8b8b8;
+}
+
+/*end component bread crumbs*/
+
+/*start component product list (catalog page)*/
+
+.sort-block {
+    display: table-row;
+    font-size: 1.2em;
+}
+.sort-cell {
+    display: table-cell;
+}
+.sort-block .sort-cell:first-child span {
+    margin-right: 10px;
+}
+.sort-block .sort-cell > input {
+    height: 29px;
+    margin-right: 5px;
+}
+/*end component product list (catalog page)*/
 
 /*********************end product list page styles*******************************/
 
