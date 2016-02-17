@@ -1103,12 +1103,19 @@ body {
     margin-right: 10px;
     font-size: 1.2em;
 }
-.sort-block .sort-cell  select {
+.sort-block .sort-cell select {
+    border: medium none;
     height: 38px;
     margin-right: 5px;
     padding-left: 10px;
-    width: 199px;
+    width: 190px;
 }
+.select-wrapper {
+    border: 1px solid #ccc;
+    margin-right: 9px;
+    overflow: hidden;
+}
+
 .sort-block .sort-cell:last-child select{
   margin-right: 0px;
 }

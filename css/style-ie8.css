@@ -134,3 +134,6 @@
 .sort-block .sort-cell  select{
   width: 180px;
 }
+.select-wrapper{
+  border:none;
+}
