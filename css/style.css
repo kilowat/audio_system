@@ -1065,6 +1065,7 @@ body {
 .bread-crumbs {
     margin-top: 27px;
     margin-bottom: 28px;
+    clear: both;
 }
 .bread-crumbs a, .bread-crumbs span {
   color: #b8b8b8;
@@ -1085,22 +1086,48 @@ body {
     margin-right: 10px;
     font-size: 1.2em;
 }
-.sort-block .sort-cell > input {
-    height: 32px;
+.sort-block .sort-cell > select {
+    height: 38px;
     margin-right: 5px;
     padding-left: 10px;
-    width: 184px;
-    font-size: 1,1em;
+    width: 199px;
 }
-.sort-block .sort-cell:last-child input{
+.sort-block .sort-cell:last-child select{
   margin-right: 0px;
 }
-.product-list-header>h1{
-  float: left;
+.product-list-header > h1 {
+    float: left;
+    font-size: 2.1em;
+    font-weight: 500;
 }
 .template-view-select{
   float: right;
+  margin-top: 6px;
 }
+.product-list-header {
+    padding-top: 32px;
+}
+.view-select{
+    background-image: url("../images/view-select-ico.png");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.view-select.view-table:hover, .view-select.view-table.view-selected{
+  background-position: 0% 100%;
+}
+.view-select.view-list {
+    background-position: 100% 0;
+    margin-left: 5px;
+}
+.template-view-select>div{
+  float: left;
+}
+.view-select.view-list:hover, .view-select.view-list.view-selected{
+  background-position: 100% 100%;
+}
+
 /*end component product list (catalog page)*/
 
 /*********************end product list page styles*******************************/
