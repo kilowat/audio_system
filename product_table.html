@@ -233,8 +233,9 @@
             <div class="view-select view-list"></div>
           </div>
         </div>
-          <!--Что бы менять вид шаблона поросто js-ом добавь класс для элемента best-product-list класс list-view-style, чтобы вернуть убери этот класс-->
-        <div class="best-product-list">
+        <!--Что бы менять вид шаблона поросто js-ом добавь класс для элемента best-product-list класс list-view-style, чтобы вернуть убери этот класс-->
+        <script src="./js/select_view.js"></script> <!--Я тут написал скриптик который запоминает выбранный вид, и меняет его-->
+        <div class="best-product-list" id="catalog-view">
           <!--foreach $arResult-->
           <!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
           <div class="best-product-cell product-hit">
