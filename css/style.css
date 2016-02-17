@@ -1025,8 +1025,21 @@ body {
 /*start pagination styles*/
 .navigation-pages {
     clear: both;
+    font-size: 1.6em;
     margin-bottom: 34px;
     padding-top: 34px;
+    text-align: right;
+}
+.navigation-pages  * {
+    margin-left: 20px;
+    display: inline;
+}
+.navigation-pages  a{
+  color: #000;
+  text-decoration: none;
+}
+.nav-current-page, .navigation-pages a:hover{
+  color: #f46e28;
 }
 /*end pagination styles*/
 
@@ -1104,18 +1117,26 @@ body {
     font-size: 1.2em;
 }
 .sort-block .sort-cell select {
+    cursor: pointer;
     border: medium none;
     height: 38px;
     margin-right: 5px;
     padding-left: 10px;
-    width: 190px;
+    width: 199px;
+    border:1px solid #ccc;
+    background-image: url("../images/sort-arrow.png");
+    background-position: 96% 185%;
+    background-repeat: no-repeat;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #b8b8b8;
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
 }
-.select-wrapper {
-    border: 1px solid #ccc;
-    margin-right: 9px;
-    overflow: hidden;
+.sort-block .sort-cell select:hover{
+  background-position: 96% -85%;
 }
-
 .sort-block .sort-cell:last-child select{
   margin-right: 0px;
 }
