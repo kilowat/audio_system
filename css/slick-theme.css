@@ -19,7 +19,7 @@
 .slick-prev,
 .slick-prev, .slick-next {
 	background-color:#fff;
-    background-image: url("/images/s-mini-left.png");
+    background-image: url("../images/s-mini-left.png");
     border: medium none;
     color: transparent;
     cursor: pointer;
@@ -36,7 +36,7 @@
     background-repeat: no-repeat;
 }
 .slick-next {
-    background-image: url("/images/s-mini-right.png");
+    background-image: url("../images/s-mini-right.png");
 }
 .slick-prev:hover,
 .slick-prev:focus,
