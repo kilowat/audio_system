@@ -131,6 +131,6 @@
 .sort-block .sort-cell:first-child{
   line-height: 2.1em;
 }
-.sort-block .sort-cell > select{
+.sort-block .sort-cell  select{
   width: 180px;
 }

@@ -166,6 +166,30 @@
             <!--end foreach-->
           </ul>
         <!--end component catalog-left-menu-->
+
+        <!--start component filter-->
+        <div class="filter-wrapper">
+          <!--to do-->
+        </div>
+        <!--end component filter-->
+
+        <!--start include area-->
+        <div class="inc-block">
+          <!--to do-->
+        </div>
+        <!--end include area-->
+
+        <!--start include area-->
+        <div class="inc-block">
+          <!--to do-->
+        </div>
+        <!--end include area-->
+
+        <!--start include area-->
+        <div class="inc-block">
+          <!--to do-->
+        </div>
+        <!--end include area-->
       </div>
       
       <div class="content-right">
@@ -454,13 +478,213 @@
             </div>
           </div>
         <!--end foreach-->
+
+        <!--start pagination-->
+        <div class="navigation-pages">
+           <div class="disabled_left"></div>
+           <span class="nav-current-page">1</span>
+            <a href="" title="#">2</a>
+            <a href="" title="#">3</a>
+            <a href="" title="#">5</a>
+            <a href="" title="#">6</a>
+            <a id="navigation_1_next_page" href=""><div class="disabled_right"></div></a>  
+          </div>
+        <!--end pagination-->      
         </div>
       </div>
     <!--end component product list (catalog page)-->
-
     </div>
   </div>
+  <!--start component promo-product-->
+    <div class="best-product-wrapper">
+      <div class="wrapper">
+        <h2 class="component-header">Похожие товары</h2>
+        <div class="best-product-list">
+          <!--foreach $arResult-->
+          <!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
+          <div class="best-product-cell product-hit">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-1.png" alt="#">
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub">q</span></li>
+                <li class="best-product-old-price">48 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
 
+          <div class="best-product-cell product-new">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/us-1.png" alt="#">
+            </a>
+            <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
+            <div class="product-path">
+              <span>Автозвук / Усилители</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">35 100<span class="rub">q</span></li>
+                <li class="best-product-old-price">39 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
+            </a>
+
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub">q</span></li>
+                <li class="best-product-old-price">48 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub">q</span></li>
+                <li class="best-product-old-price">48 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          <!--end foreach-->
+        </div>
+        <div class="ajax-btn-wrapper">
+          <button class="ajax-load-more-btn hvr-bounce-to-bottom">
+            показать еще
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--end component promo product-->
+
+  <!--start component see-product-->
+    <div class="best-product-wrapper">
+      <div class="wrapper">
+        <h2 class="component-header">Вы недавно смотрели</h2>
+        <div class="best-product-list">
+          <!--foreach $arResult-->
+          <!--для добавления бейджев добавь элементу best-product-cell классы: product-hit, product-new-->
+          <div class="best-product-cell product-hit">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-1.png" alt="#">
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар-детектор Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub">q</span></li>
+                <li class="best-product-old-price">48 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="best-product-cell product-new">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/us-1.png" alt="#">
+            </a>
+            <a href="#" title="#" class="best-product-name" >Усилитель Alpine PDX-V9</a>
+            <div class="product-path">
+              <span>Автозвук / Усилители</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">35 100<span class="rub">q</span></li>
+                <li class="best-product-old-price">39 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
+            </a>
+
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub">q</span></li>
+                <li class="best-product-old-price">48 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="best-product-cell">
+            <a href="#" title="#" class="best-product-pic">
+              <img src="./images/radar-2.png" alt="#">
+            </a>
+            <a href="#" title="#" class="best-product-name" >Радар - детектер Escort 8500ci Plus, INTL, red</a>
+            <div class="product-path">
+              <span>Автоэлектрика / Антирадары</span>
+            </div>          
+            <div class="best-product-bottom-item">
+              <ul class="best-product-price">
+                <li class="best-product-cur-price">45 000<span class="rub">q</span></li>
+                <li class="best-product-old-price">48 500<span class="rub">q</span></li>
+              </ul>
+              <div class="best-product-tocart">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+              </div>
+            </div>
+          </div>
+          <!--end foreach-->
+        </div>
+      </div>
+    </div>
+    <!--end component see product-->
   <div class="push"><!--hack push footer to bottom don't delete--></div>
   </main><!-- .content -->
 

@@ -800,6 +800,7 @@ body {
 /*start component best product(index-page)*/
 .best-product-wrapper{
   background-color:#fafafa;
+  clear: both;
 }
 .best-product-cell{
     background-color:#fff;
@@ -1021,19 +1022,30 @@ body {
   color:#f79b6b\9 /*ie*/
 }
 
+/*start pagination styles*/
+.navigation-pages {
+    clear: both;
+    margin-bottom: 34px;
+    padding-top: 34px;
+}
+/*end pagination styles*/
+
 /*********************start product list page styles*******************************/
 .content-left {
     float: left;
-    width: 24%;
+    width: 23.6%;
 }
-.content-right{
-  float: left;
-  width: 75.9%;
+.content-right {
+    float: left;
+    width: 76.3%;
 }
 .content-right .product-list-wrapper{
-  padding-left: 8px;
+  padding-left: 13px;
 }
 /*start component catalog-left-menu*/
+.cat-left-menu {
+    margin-bottom: 44px;
+}
 .cat-left-menu-head {
     font-size: 2em;
     font-weight: 500;
@@ -1091,7 +1103,7 @@ body {
     margin-right: 10px;
     font-size: 1.2em;
 }
-.sort-block .sort-cell > select {
+.sort-block .sort-cell  select {
     height: 38px;
     margin-right: 5px;
     padding-left: 10px;
@@ -1136,6 +1148,19 @@ body {
 
 /*end component product list (catalog page)*/
 
+/*start component filter*/
+.filter-wrapper{
+  border: 1px solid #b8b8b8;
+  height: 562px;
+  margin-bottom: 30px;
+}
+.inc-block{
+  margin-top: 20px;
+  border: 1px solid #b8b8b8;
+  height: 166px;
+}
+/*end component filter*/
+
 /*********************end product list page styles*******************************/
 
 /* Footer
@@ -1143,6 +1168,9 @@ body {
 .footer, .push {
   height:225px;
   clear: both;
+}
+.push{
+  margin-bottom: 15px;
 }
 .footer-wrapper{
   border-top:2px solid #f79b6b;
