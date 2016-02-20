@@ -10,3 +10,12 @@
 .fotorama__stage {
     border: 1px solid #ccc;
 }
+
+.fotorama {
+    min-width: 1px;
+    overflow: hidden;
+}
+.fotorama__thumb-border{
+	border:1px solid #ccc;
+}
+

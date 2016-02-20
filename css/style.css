@@ -1251,6 +1251,7 @@ body {
 .product-detail-head h1 {
     font-size: 2em;
     font-weight: 700;
+    margin-bottom: 19px;
     padding-left: 12px;
 }
 .product-detail-left {
@@ -1262,6 +1263,13 @@ body {
     float: left;
     padding-left: 12px;
     width: 39%;
+}
+
+.props-list li {
+    font-size: 1.2em;
+}
+.props-list b {
+    font-weight: 500;
 }
 /*end component detail product*/
 
