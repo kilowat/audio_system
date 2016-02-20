@@ -1256,20 +1256,124 @@ body {
 }
 .product-detail-left {
     float: left;
-    padding-left: 16px;
+    padding-left: 12px;
     width: 56.6%;
 }
 .product-detail-right {
     float: left;
     padding-left: 12px;
-    width: 39%;
+    width: 40%;
 }
 
 .props-list li {
-    font-size: 1.2em;
+    font-size: 1.15em;
+    margin-bottom: 5px;
 }
 .props-list b {
     font-weight: 500;
+}
+
+.detail-product-old-price::after {
+    background-color: #f46e28;
+    content: "";
+    display: block;
+    height: 1px;
+    left: -6px;
+    position: absolute;
+    top: 10px;
+    width: 120%;
+}
+.detail-product-price li {
+    display: inline-block;
+    font-weight: 600;
+}
+.detail-product-old-price {
+    color: #f46e28;
+    display: inline;
+    font-size: 1.3em;
+    margin-left: 0;
+    position: relative;
+}
+.detail-product-price li {
+    display: inline-block;
+    font-weight: 600;
+}
+.detail-product-cur-price {
+    font-size: 2.7em;
+    font-weight: 900;
+}
+.detail-product-prices {
+    margin-top: 29px;
+}
+
+.product-detail-right .buy-section {
+    margin-top: 24px;
+}
+.product-detail-right .buy-section .best-product-ico{
+  margin-left: 20px;
+}
+
+.product-detail-right .detail-product-descr {
+    margin-top: 26px;
+}
+.product-detail-right .detail-product-descr > span {
+    font-size: 1.35em;
+}
+.product-detail-right .detail-product-descr > ul {
+    margin-top: 14px;
+    list-style: inside none disc;
+}
+.product-detail-right .detail-product-descr  ul li {
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+.product-articles {
+    clear: both;
+    padding-left: 12px;
+    padding-top: 25px;
+}
+
+.product-articles h2 {
+    font-size: 2.1em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.product-article-pic {
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 12px;
+    width: 135px;
+    height: 140px;
+    display: table-cell;
+}
+.product-article-pic img{
+  width: 100%;
+}
+.product-article-item {
+    clear: both;
+    display: block;
+    height: 140px;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+
+.product-article-pic > a {
+    display: table-cell;
+    height: 140px;
+    vertical-align: middle;
+}
+.product-article-content .content-link {
+    color: #000;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+.product-article-content .see-detail.hvr-bounce-to-bottom {
+   position: absolute;
+   bottom: 0px;
 }
 /*end component detail product*/
 

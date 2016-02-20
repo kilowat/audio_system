@@ -17,7 +17,6 @@
   <script src="./js/app.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/js.cookie.js"></script><!--это либа нужна чтоб запоминть выбранный вид шаблона в каталоге-->
-  <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script>
     <!--[if  IE 8]><link href="./css/style-ie8.css" rel="stylesheet"><![endif]-->
 </head>
 <body>
@@ -166,13 +165,6 @@
             <!--end foreach-->
           </ul>
         <!--end component catalog-left-menu-->
-
-        <!--start component filter-->
-        <div class="filter-wrapper">
-          <!--to do-->
-        </div>
-        <!--end component filter-->
-
         <!--start include area-->
         <div class="inc-block">
           <!--to do-->
@@ -218,18 +210,21 @@
       <div class="product-detail-content">
         <div class="product-detail-left">
           <div id="product-pic-slider">
-              <div class="fotorama" data-width="430" data-height="450"  data-nav="thumbs">
-                <img src="./images/slider-img.png" alt="" >
-                <img src="./images/slider-img.png" alt="" >
-                <img src="./images/slider-img.png" alt="" >
-                <img src="./images/slider-img.png" alt="" >
-                <img src="./images/slider-img.png" alt="" >
+              <div class="fotorama" data-width="430" data-height="450"  data-nav="thumbs" data-thumbborderwidth="1" data-thumbmargin="10" data-thumbwidth="75" data-thumbheight="70" data-thumbpadding="10">
+                <!--foreach $arResult["PICTURES"]-->
+                <div class="fotorama__wrap-link" data-img="../images/slider-img.png"><a href="../images/slider-img.png" class="fancybox"></a></div>
+                <div class="fotorama__wrap-link" data-img="../images/s-img-1.jpg"><a href="../images/s-img-1.jpg" class="fancybox"></a></div>
+                <div class="fotorama__wrap-link" data-img="../images/s-img-2.jpg"><a href="../images/s-img-2.jpg" class="fancybox"></a></div>
+                <div class="fotorama__wrap-link" data-img="../images/s-img-4.jpg"><a href="../images/s-img-4.jpg" class="fancybox"></a></div>
+                <div class="fotorama__wrap-link" data-img="../images/s-img-2.jpg"><a href="../images/s-img-2.jpg" class="fancybox"></a></div>
+                <!--endforeach-->
               </div>
           </div>
         </div>
         <div class="product-detail-right">
           <div class="props-list">
               <ul>
+                <!--foreach $arProps-->
                 <li>
                   <b>Код товара:</b>
                   <span>ЦИБ4427</span>
@@ -238,9 +233,54 @@
                   <b>Производитель:</b>
                   <span>ARIA</span>
                 </li>
+                <!--endforeach-->
               </ul>
           </div>
+            <ul class="detail-product-prices">
+              <li class="detail-product-cur-price">35 100<span class="rub">q</span></li>
+              <li class="detail-product-old-price">39 500<span class="rub">q</span></li>
+          </ul> 
+          <div class="buy-section">
+                <button class="tocart-btn hvr-buzz">в корзину</button>
+                <a href="#" class="best-product-ico" title="#"></a>
+          </div>
+          <div class="detail-product-descr">
+            <span>Описание</span>
+            <ul>
+              <li>радар-детектор с лазерным приемником </li>
+              <li>радар-детектор с лазерным приемником </li>
+              <li>радар-детектор с лазерным приемником </li>
+              <li>радар-детектор с лазерным приемником </li>
+            </ul>
+          </div>        
        </div>
+      </div>
+      <div class="product-articles">
+        <h2>Статьи о товаре</h2>
+        <div class="product-articles-wrapper">
+          <!--foreach $arResult-->
+            <div class="product-article-item">
+              <div class="product-article-pic">
+                <a href="#" title=""><img src="./images/radar-1.png" alt=""></a>
+              </div>
+              <div class="product-article-content">
+                <a href="#" title="" class="link-hover content-link"><h3>Заголовок статьи заголовок статьи</h3></a>
+                <div class="product-article-text">Равным образом начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. </div>
+                <a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
+              </div>
+            </div>
+            <div class="product-article-item">
+              <div class="product-article-pic">
+                <a href="#" title=""><img src="./images/radar-1.png" alt=""></a>
+              </div>
+              <div class="product-article-content">
+                <a href="#" title="" class="link-hover content-link"><h3>Заголовок статьи заголовок статьи</h3></a>
+                <div class="product-article-text">Равным образом начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. </div>
+                <a href="#" title="" class="see-detail hvr-bounce-to-bottom">подробнее</a>
+              </div>
+            </div>
+          <!--endforeach-->
+        </div>
       </div>
     </div>
     <!--end component product detail (catalog page)-->
