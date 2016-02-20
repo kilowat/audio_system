@@ -1247,6 +1247,24 @@ body {
 
 /*********************end product list page styles*******************************/
 
+/*start component detail product*/
+.product-detail-head h1 {
+    font-size: 2em;
+    font-weight: 700;
+    padding-left: 12px;
+}
+.product-detail-left {
+    float: left;
+    padding-left: 16px;
+    width: 56.6%;
+}
+.product-detail-right {
+    float: left;
+    padding-left: 12px;
+    width: 39%;
+}
+/*end component detail product*/
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer, .push {
